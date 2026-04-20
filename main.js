@@ -3,6 +3,7 @@ let elapsedTime = 0;
 let timerInterval;
 
 function start() {
+  clearInterval(timerInterval);
   startTime = Date.now() - elapsedTime;
 
   timerInterval = setInterval(() => {
