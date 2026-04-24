@@ -4,10 +4,10 @@ let timerInterval;
 
 
 $(document).ready(function() {
-  $('.start').click(function() {
+  $('#start').click(function() {
     $(this).prop("disabled", true);
-    $('.stop').prop("disabled", false);
-    $('.reset').prop("disabled", false);
+    $('#stop').prop("disabled", false);
+    $('#reset').prop("disabled", false);
     start();
   });
 
@@ -31,10 +31,10 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  $('.stop').click(function() {
+  $('#stop').click(function() {
     $(this).prop("disabled", true);
-    $('.start').prop("disabled", false);
-    $('.reset').prop("disabled", false);
+    $('#start').prop("disabled", false);
+    $('#reset').prop("disabled", false);
     stop();
   });
 
@@ -46,10 +46,10 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  $('.reset').click(function() {
+  $('#reset').click(function() {
     $(this).prop("disabled", true);
-    $('.start').prop("disabled", false);
-    $('.stop').prop("disabled", true);
+    $('#start').prop("disabled", false);
+    $('#stop').prop("disabled", true);
     reset();
   });
 
